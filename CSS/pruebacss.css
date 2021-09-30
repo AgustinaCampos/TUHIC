@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/* ------------------------------------------------ HEADER - START*/
+.header {
+  background-color: #cae7f2; }
+
+.header__div {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  grid-template-areas: ". logo menu";
+  height: 100%; }
+
+.header__div__logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: end; }
+
+.header__div__menu {
+  list-style-type: square;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  grid-area: menu;
+  justify-self: end;
+  align-self: end;
+  word-spacing: 7px; }
+  .header__div__menu li {
+    display: inline-block; }
+    .header__div__menu li a {
+      text-decoration: none;
+      /* Link sin subrayado */
+      color: #F3F9FB;
+      font-size: 24px;
+      transition: color 0.3s, font-size 0.3s; }
+    .header__div__menu li a:hover {
+      font-size: 28px;
+      color: #10416b; }
+  .header__div__menu ul {
+    margin-bottom: -5px; }
+
+/* ------------------------------------------------ CONTENT - START*/
+.Parrafos {
+  color: #113F67;
+  font-size: 21px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center; }
+
+/* ------------------------------------------------ INDEX - START*/
+.ImagenIndex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%; }
+
+/* ------------------------------------------------ ABOUT - START*/
+.about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "desarrollo mockup";
+  height: 100%; }
+
+.about__titles {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 25px;
+  color: #92CBE6;
+  text-align: center; }
+
+.about__desarrollo {
+  display: grid;
+  grid-area: desarrollo;
+  color: #113F67;
+  font-size: 21px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 20px; }
+
+.about__mockup {
+  display: grid;
+  grid-area: mockup;
+  justify-items: center; }
+  .about__mockup img {
+    height: 80%; }
+
+/* ------------------------------------------------ CLIENTS - START*/
+.testimonios {
+  color: #113F67;
+  font-size: 21px;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  margin: 40px 25px;
+  overflow: hidden;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #113F67; }
+
+/* ------------------------------------------------ PRICING - START*/
+.main_title {
+  margin-top: 20px;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #92CBE6;
+  text-align: center; }
+
+.Table {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px; }
+
+.Table__caracteristicas_large {
+  color: #111010;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #d9edc2;
+  border: 1px solid #93e641;
+  margin: 40px 0 25px;
+  padding: 0px 20px 90px 20px; }
+
+.Table__caracteristicas_responsive {
+  color: #111010;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #d9edc2;
+  border: 1px solid #93e641;
+  padding: 20px; }
+
+.Table__caracteristicas__plan {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 50px 0; }
+  .Table__caracteristicas__plan h2, .Table__caracteristicas__plan h6 {
+    color: #87C0CD;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; }
+
+.Table__title {
+  color: #111010;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #d9edc2;
+  border: 1px solid #93e641; }
+  .Table__title h6 {
+    color: #87C0CD;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; }
+
+/* ------------------------------------------------ FOOTER - START*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.footer__div {
+  background-color: #113F67;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: 1% 39% 59% 1%;
+  grid-template-rows: 100%;
+  grid-template-areas: ". copy redes .";
+  width: 100%; }
+
+.footer__div__copy {
+  grid-area: copy; }
+
+.footer__div__redes {
+  grid-area: redes;
+  justify-self: end; }
+
+/* ------------------------------------------------ CONTACT- START*/
+.contacto {
+  height: 100%; }
+
+.contacto__info {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #92CBE6;
+  margin: 80px; }
+
+.contacto__formulario {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  margin: 35px; }
+
+.contacto__formulario__campos {
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #080808; }
+
+@media (max-width: 992px) {
+  .contacto__info {
+    text-align: center;
+    margin: 25px; }
+  .contacto__formulario {
+    margin: 20px 35px 90px 35px; }
+  .about {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "desarrollo";
+    padding: 20px; } }
+
+@media (max-width: 1240px) {
+  .about__mockup img {
+    height: auto;
+    width: 100%; } }

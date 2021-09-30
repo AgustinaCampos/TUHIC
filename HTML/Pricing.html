@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="turnos medicos, software medico, sistema de gestion, medico online, software salud, gestion paciente">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/pruebacss.css">
+        <title>Tuhic - Planes</title>
+    </head>
+    <body>
+        <!-- Header con logo y menu de la pagina -->
+        <nav class="navbar navbar-expand-lg header navbar-light ">
+            <div class="container-fluid header__div">
+                <a class="navbar-brand header__div__logo" href="Index.html">
+                    <img src="Img/LOGO.png" alt="Tuhic Logo" width="150"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header__div__menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   
+        <!-- Informacion sobre los distintos planes y precios -->
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <div class="main_title"> Conoce nuestro planes </div>
+                    <div class="Parrafos"> Y elegí el que mejor se adapta a tus necesidades </div>
+                </div>
+            </div>
+            <!-- Tabla para pantallas > 992px -->
+            <div class="Table d-none d-md-flex">
+                <div class="Table__caracteristicas_large">
+                    <div class="Table__caracteristicas__plan">
+                        <h2>Basic</h2>
+                    </div>
+                    <p><strong>Cantidad de Medicos:</strong> 1 </p>
+                    <p><strong>Cantidad de pacientes:</strong> Ilimitada</p>
+                    <p><strong>Turnos mensuales:</strong> Ilimitados</p>
+                    <p><strong>Estadisticas:</strong> No</p>
+                    <p><strong>Sucursales:</strong> 1</p>
+                </div>
+                <div class="Table__caracteristicas_large">
+                    <div class="Table__caracteristicas__plan">
+                        <h2>Value</h2>
+                    </div>
+                    <p><strong>Cantidad de Medicos:</strong> 5 </p>
+                    <p><strong>Cantidad de pacientes:</strong> Ilimitada </p>
+                    <p><strong>Turnos mensuales:</strong> Ilimitados </p>
+                    <p><strong>Estadisticas:</strong> Sí </p>
+                    <p><strong>Sucursales:</strong> 3 </p>
+                </div>
+                <div class="Table__caracteristicas_large">
+                    <div class="Table__caracteristicas__plan">
+                        <h2 >Premium</h2>
+                    </div>
+                    <p><strong>Cantidad de Medicos:</strong> Ilimitada </p>
+                    <p><strong>Cantidad de pacientes:</strong> Ilimitada </p>
+                    <p><strong>Turnos mensuales:</strong> Ilimitados </p>
+                    <p><strong>Estadisticas:</strong> Sí </p>        
+                    <p><strong>Sucursales:</strong> 3 </p>
+                </div>
+            </div>
+
+            <!-- Tabla para pantallas medianas y pequeñas -->
+            <div class="row d-md-none mt-3">
+                <!-- Basic -->
+                <div class="col-12 mb-2">
+                    <a class="list-group-item list-group-item-action text-center rounded Table__title" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                        <h6>Basic</h6>
+                    </a>
+                    <div class="collapse mt-1" id="collapse1">
+                        <div class="Table__caracteristicas_responsive text-center">
+                            <p><strong>Cantidad de Medicos:</strong> 1 </p>
+                            <p><strong>Cantidad de pacientes:</strong> Ilimitada</p>
+                            <p><strong>Turnos mensuales:</strong> Ilimitados</p>
+                            <p><strong>Estadisticas:</strong> No</p>
+                            <p><strong>Sucursales:</strong> 1</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Value -->
+                <div class="col-12 mb-2">
+                    <a class="list-group-item list-group-item-action text-center rounded Table__title" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                        <h6>Value</h6>
+                    </a>
+                    <div class="collapse mt-1" id="collapse2">
+                        <div class="Table__caracteristicas_responsive text-center">
+                            <p><strong>Cantidad de Medicos:</strong> 5 </p>
+                            <p><strong>Cantidad de pacientes:</strong> Ilimitada </p>
+                            <p><strong>Turnos mensuales:</strong> Ilimitados </p>
+                            <p><strong>Estadisticas:</strong> Sí </p>
+                            <p><strong>Sucursales:</strong> 3 </p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Premium -->
+                <div class="col-12 mb-2">
+                    <a class="list-group-item list-group-item-action text-center rounded Table__title" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                        <h6>Premium</h6>
+                    </a>
+                    <div class="collapse mt-1" id="collapse3">
+                        <div class="Table__caracteristicas_responsive text-center">
+                            <p><strong>Cantidad de Medicos:</strong> Ilimitada </p>
+                            <p><strong>Cantidad de pacientes:</strong> Ilimitada </p>
+                            <p><strong>Turnos mensuales:</strong> Ilimitados </p>
+                            <p><strong>Estadisticas:</strong> Sí </p>        
+                            <p><strong>Sucursales:</strong> 3 </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer con info de contacto -->
+        <footer class="footer">
+            <div class="footer__div py-2">
+                <span class="footer__div__copy">Tuhic ®</span>
+                <span class="footer__div__redes">Linkedin | Twitter | Facebook</span>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>
