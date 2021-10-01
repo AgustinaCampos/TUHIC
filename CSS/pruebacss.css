@@ -95,6 +95,8 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 2px solid #113F67; }
+  .testimonios span {
+    font-weight: bolder; }
 
 /* ------------------------------------------------ PRICING - START*/
 .main_title {
