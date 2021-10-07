@@ -162,26 +162,20 @@
 
 /* ------------------------------------------------ FOOTER - START*/
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
-
-.footer__div {
   background-color: #113F67;
   font-family: 'Nunito', sans-serif;
-  color: white;
-  display: grid;
-  grid-template-columns: 1% 39% 59% 1%;
-  grid-template-rows: 100%;
-  grid-template-areas: ". copy redes .";
-  width: 100%; }
-
-.footer__div__copy {
-  grid-area: copy; }
-
-.footer__div__redes {
-  grid-area: redes;
-  justify-self: end; }
+  font-weight: bolder;
+  color: white; }
+  .footer ul li a {
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    /* Link sin subrayado */
+    transition: font-size 0.3s; }
+  .footer a:hover {
+    font-size: 28px; }
 
 /* ------------------------------------------------ CONTACT- START*/
 .contacto {
