@@ -32,9 +32,7 @@ $menuAnimacion: #10416b;
 .header__div__menu{
     list-style-type: square;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    grid-area: menu;
-    justify-self: end;
-    align-self: end;
+    text-align: end;
     word-spacing: 7px;
     li{
         display: inline-block;
@@ -70,6 +68,16 @@ $menuAnimacion: #10416b;
     margin-top: 10px;
     width: 100%;
 }
+
+.Index_title{
+    margin-top: 20px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: $titulo;
+    text-align: left;
+}
+
 /* ------------------------------------------------ ABOUT - START*/
 .about{
     display: grid;

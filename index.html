@@ -8,6 +8,8 @@
         <meta name="keywords" content="turnos medicos, software medico, sistema de gestion, medico online, software salud, gestion paciente">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏻‍⚕️ </text></svg>">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Nunito:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
@@ -48,8 +50,9 @@
                 </div>
             </div>
         </nav>
-        <!-- Imagenes informativas -->
+        
         <main>
+            <!-- Carrousel con imagenes informativas -->
             <div class="container ImagenIndex">
                 <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -73,6 +76,45 @@
                     </button>
                 </div>
             </div>
+            <!-- Breve informacion introductoria -->
+            <div class="container pt-5">
+                <div data-aos="zoom-in-down" class="row justify-content-evenly align-items-center">
+                    <div class="col-lg-4 col-11">
+                        <h4 class="Index_title"> QUE ES TUHIC? </h4><hr>
+                        <span class="Parrafos"> Es un software creado con el fin de ayudarte a tener todos la información de tus pacientes en un solo lugar, otorgar turnos y gestionar historias clínicas. </span>
+                    </div>
+                    <div class="col-lg-4 col-11">
+                        <img src="./Img/Vector_1.png" class="d-block w-100" alt="Sistema de turnos e historias clinicas">
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down" class="row justify-content-evenly align-items-center">
+                    <div class="col-lg-4 col-11">
+                        <img src="./Img/Vector_2.png" class="d-block w-100" alt="Sistema de turnos e historias clinicas">
+                    </div>
+                    <div class="col-lg-4 col-11">
+                        <h4 class="Index_title"> QUE BENEFICIOS TENGO CON TUHIC? </h4><hr>
+                        <span class="Parrafos">- Personaliza el sistema según tus necesidad.<br> 
+                            - Estadísticas para medir tu mes de trabajo.<br> 
+                            - Soporte especializado.<br> - Decile chau a los papeles.<br>
+                            - Descuentos por referidos. 
+                        </span>     
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down" class="row justify-content-evenly align-items-center">
+                    <div class="col-lg-4 col-11">
+                        <h4 class="Index_title"> COMO EMPEZAR A USARLO </h4><hr>
+                        <span class="Parrafos"> 1- Completa el formulario para que nos contactemos con vos. <br>
+                            2- Descarga la demo gratuita para probar el sistema. <br>
+                            3- Elegí el plan según tu cantidad de medicos, pacientes y clínicas. <br>
+                            4- Crea los distintos usuarios y listo! 
+                        </span>  
+                    </div>
+                    <div class="col-lg-4 col-11">
+                        <img src="./Img/Vector_3.png" class="d-block w-100" alt="Sistema de turnos e historias clinicas">
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <!-- Footer con info de contacto -->
@@ -85,6 +127,11 @@
             <div class="text-center my-2 fs-5"> Tuhic ® </div>
         </footer>
 
+        <!-- Scrips -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>
