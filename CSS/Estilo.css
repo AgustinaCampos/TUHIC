@@ -37,6 +37,12 @@
   .header__div__menu ul {
     margin-bottom: -5px; }
 
+/* ------------------------------------------------ PAGE 404 - START*/
+.div_page404 {
+  margin: 5rem 0 5rem 0; }
+  .div_page404 h1 {
+    font-size: 130px; }
+
 /* ------------------------------------------------ CONTENT - START*/
 .Parrafos {
   color: #113F67;
