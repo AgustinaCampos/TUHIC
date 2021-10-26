@@ -3,13 +3,20 @@
     padding: 0;
 }
 
+// Colors
 $titulo: #92CBE6;
 $parrafo: #113F67;
 $caracteristicas: rgb(17, 16, 16);
-$planes: #87C0CD;
+$planes: #161c1d;
 $header: #cae7f2;
 $menu: #F3F9FB;
 $menuAnimacion: #10416b;
+$estrella: #ffbf00;
+$footer: #113F67;
+// Fonts
+$Nunito: 'Nunito', sans-serif;
+$Signika: 'Signika Negative', sans-serif;
+
 
 /* ------------------------------------------------ HEADER - START*/
 .header{
@@ -56,7 +63,7 @@ $menuAnimacion: #10416b;
 .Parrafos{
     color: $parrafo;
     font-size: 21px;
-    font-family: 'Nunito', sans-serif;
+    font-family: $Nunito;
     text-align: center;
 }
 
@@ -71,7 +78,7 @@ $menuAnimacion: #10416b;
 
 .Index_title{
     margin-top: 20px;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: $Signika;
     font-weight: bold;
     font-size: 35px;
     color: $titulo;
@@ -88,7 +95,7 @@ $menuAnimacion: #10416b;
 }
 
 .about__titles{
-    font-family: 'Signika Negative', sans-serif;
+    font-family: $Signika;
     font-size: 25px;
     color: $titulo;
     text-align: center;
@@ -98,7 +105,7 @@ $menuAnimacion: #10416b;
     grid-area: desarrollo;
     color: $parrafo;
     font-size: 21px;
-    font-family: 'Nunito', sans-serif;
+    font-family: $Nunito;
     text-align: center;
     padding: 20px;
 }
@@ -113,27 +120,27 @@ $menuAnimacion: #10416b;
 }
 
 /* ------------------------------------------------ CLIENTS - START*/
-.testimonios{
+.card_testimonios{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.testimonios_parrafos{
     color: $parrafo;
     font-size: 21px;
-    font-family: 'Nunito', sans-serif;
-    display: flex;
-    margin: 40px 25px;
-	overflow:hidden;
-	padding: 20px;
-	-webkit-border-radius: 10px;
-    border-radius: 10px;
-	border:2px solid $parrafo;
-    span{
-        font-weight: bolder;
-    }
+    font-family: $Nunito;
+}
 
+.testimonios_rate{
+    color: $estrella;
+    font-size: 25px;
 }
 
 /* ------------------------------------------------ PRICING - START*/
 .main_title{
     margin-top: 20px;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: $Signika;
     font-weight: bold;
     font-size: 35px;
     color: $titulo;
@@ -148,21 +155,24 @@ $menuAnimacion: #10416b;
 
 @mixin Table__caracteristicas{
     color: $caracteristicas;
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    font-family: $Nunito;
     overflow: hidden;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-color:#d9edc2;
 	border:1px solid #93e641;
+    p span{
+        font-weight: bolder;
+    }
 }
 
 .Table__caracteristicas_large{
     @include Table__caracteristicas; 
     margin: 40px 0 25px;
 	padding: 0px 20px 90px 20px;
-	
 }
+
 .Table__caracteristicas_responsive{
     @include Table__caracteristicas; 
 	padding: 20px;
@@ -175,24 +185,24 @@ $menuAnimacion: #10416b;
     h2, h6 {
         color: $planes;
         font-size: 35px;
-        font-family: 'Nunito', sans-serif;
+        font-family: $Signika;
         font-weight: bold;
     }
 }
 .Table__title{
     @include Table__caracteristicas;
     h6 {
-            color: $planes;
-            font-size: 35px;
-            font-family: 'Nunito', sans-serif;
-            font-weight: bold;
-        }
+        color: $planes;
+        font-size: 35px;
+        font-family: $Nunito;
+        font-weight: bold;
+    }
 }
 /* ------------------------------------------------ FOOTER - START*/
 
 .footer{
-    background-color: #113F67;
-    font-family: 'Nunito', sans-serif;
+    background-color: $footer;
+    font-family: $Nunito;
     font-weight: bolder;
     color: white;
     ul li  a {
@@ -214,7 +224,7 @@ $menuAnimacion: #10416b;
 }
 
 .contacto__info{
-    font-family: 'Signika Negative', sans-serif;
+    font-family: $Signika;
     font-weight: bold;
     font-size: 50px;
     color: $titulo;
@@ -222,7 +232,7 @@ $menuAnimacion: #10416b;
 }
 
 .contacto__formulario{
-    font-family: 'Nunito', sans-serif;
+    font-family: $Nunito;
     font-size: 17px;
     margin: 35px;
 }

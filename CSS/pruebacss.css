@@ -41,7 +41,7 @@
 .Parrafos {
   color: #113F67;
   font-size: 21px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center; }
 
 /* ------------------------------------------------ INDEX - START*/
@@ -53,7 +53,7 @@
 
 .Index_title {
   margin-top: 20px;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   font-size: 35px;
   color: #92CBE6;
@@ -68,7 +68,7 @@
   height: 100%; }
 
 .about__titles {
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   font-size: 25px;
   color: #92CBE6;
   text-align: center; }
@@ -78,7 +78,7 @@
   grid-area: desarrollo;
   color: #113F67;
   font-size: 21px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   padding: 20px; }
 
@@ -90,24 +90,23 @@
     height: 80%; }
 
 /* ------------------------------------------------ CLIENTS - START*/
-.testimonios {
+.card_testimonios {
+  text-align: center;
+  padding: 10px; }
+
+.testimonios_parrafos {
   color: #113F67;
   font-size: 21px;
-  font-family: 'Nunito', sans-serif;
-  display: flex;
-  margin: 40px 25px;
-  overflow: hidden;
-  padding: 20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: 2px solid #113F67; }
-  .testimonios span {
-    font-weight: bolder; }
+  font-family: "Nunito", sans-serif; }
+
+.testimonios_rate {
+  color: #ffbf00;
+  font-size: 25px; }
 
 /* ------------------------------------------------ PRICING - START*/
 .main_title {
   margin-top: 20px;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   font-size: 35px;
   color: #92CBE6;
@@ -120,8 +119,8 @@
 
 .Table__caracteristicas_large {
   color: #111010;
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
   overflow: hidden;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -129,47 +128,53 @@
   border: 1px solid #93e641;
   margin: 40px 0 25px;
   padding: 0px 20px 90px 20px; }
+  .Table__caracteristicas_large p span {
+    font-weight: bolder; }
 
 .Table__caracteristicas_responsive {
   color: #111010;
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
   overflow: hidden;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #d9edc2;
   border: 1px solid #93e641;
   padding: 20px; }
+  .Table__caracteristicas_responsive p span {
+    font-weight: bolder; }
 
 .Table__caracteristicas__plan {
   display: flex;
   justify-content: center;
   padding: 10px 0 50px 0; }
   .Table__caracteristicas__plan h2, .Table__caracteristicas__plan h6 {
-    color: #87C0CD;
+    color: #161c1d;
     font-size: 35px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Signika Negative", sans-serif;
     font-weight: bold; }
 
 .Table__title {
   color: #111010;
-  font-size: 15px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
   overflow: hidden;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #d9edc2;
   border: 1px solid #93e641; }
+  .Table__title p span {
+    font-weight: bolder; }
   .Table__title h6 {
-    color: #87C0CD;
+    color: #161c1d;
     font-size: 35px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: bold; }
 
 /* ------------------------------------------------ FOOTER - START*/
 .footer {
   background-color: #113F67;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bolder;
   color: white; }
   .footer ul li a {
@@ -188,14 +193,14 @@
   height: 100%; }
 
 .contacto__info {
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   font-size: 50px;
   color: #92CBE6;
   margin: 80px; }
 
 .contacto__formulario {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 17px;
   margin: 35px; }
 
