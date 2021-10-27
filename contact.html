@@ -19,42 +19,44 @@
     </head>
     <body>
         <!-- Header con logo y menu de la pagina -->
-        <nav class="navbar navbar-expand-lg header navbar-light ">
-            <div class="container-fluid header__div">
-                <a class="navbar-brand header__div__logo" href="index.html">
+        <nav class="navbar navbar-expand-lg header navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
                     <img src="Img/Index/LOGO.png" alt="Tuhic Logo" width="150"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse header__div__menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="clients.html">Clients</a>
+                            <a href="clients.html">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                            <a href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Formulario de contacto  -->
+        <!-- Contenido principal de la página -->
         <main class="container-fluid">
             <div class="row contacto">
+                <!-- Texto informativo -->
                 <div class="col-xl-4 col-lg col-12 me-auto contacto__info flex-shrink-1 text-center">
                     <p> ¿Querés recibir mas informacion? Completá el formulario y solicitá tu demo gratis! &#x1F929;</p>
                 </div>
+                <!-- Formulario de contacto -->
                 <div class="col-xl-3 col-lg col-12 contacto__formulario flex-shrink-1">
                     <form class="contacto__formulario__campos shadow">
                         <legend>Contacto</legend>

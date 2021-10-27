@@ -9,205 +9,54 @@ $parrafo: #113F67;
 $caracteristicas: rgb(17, 16, 16);
 $planes: #161c1d;
 $header: #cae7f2;
-$menu: #F3F9FB;
+$menu: #31768a;
 $menuAnimacion: #10416b;
 $estrella: #ffbf00;
 $footer: #113F67;
 // Fonts
 $Nunito: 'Nunito', sans-serif;
 $Signika: 'Signika Negative', sans-serif;
+$Yanone: 'Yanone Kaffeesatz', sans-serif;
 
+/* --------- HEADER --------- */
 
-/* ------------------------------------------------ HEADER - START*/
 .header{
     background-color: $header;
-}
-.header__div{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100%;
-    grid-template-areas: ". logo menu";
-    height: 100%;
-}
-
-.header__div__logo{
-    grid-area: logo;
-    justify-self: center;
-    align-self: end;
 }
 
 .header__div__menu{
     list-style-type: square;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-align: end;
-    word-spacing: 7px;
-    li{
+    font-family: $Yanone;
+    ul li{
         display: inline-block;
+        margin: 0.4rem;
         a{
             text-decoration: none; /* Link sin subrayado */
             color: $menu;
-            font-size: 24px;
-            transition: color 0.3s, font-size 0.3s;
+            font-size: 26px;
+            transition: color 0.3s;
+        }
+        a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 20px;
+            content: "";
+            display: block;
+            height: 3px;
+            left: 50%;
+            background: $menuAnimacion;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
         }
         a:hover{
-            font-size: 28px;
             color: $menuAnimacion;
         }
-    }
-    ul{
-        margin-bottom: -5px;
-    }
-}
-/* ------------------------------------------------ PAGE 404 - START*/
-
-.div_page404{
-    margin: 5rem 0 5rem 0;
-    h1{
-        font-size: 130px;
+        a:hover:after { 
+            width: 100%;
+        }
     }
 }
 
-
-/* ------------------------------------------------ CONTENT - START*/
-.Parrafos{
-    color: $parrafo;
-    font-size: 21px;
-    font-family: $Nunito;
-    text-align: center;
-}
-
-/* ------------------------------------------------ INDEX - START*/
-
-.ImagenIndex{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.Index_title{
-    margin-top: 20px;
-    font-family: $Signika;
-    font-weight: bold;
-    font-size: 35px;
-    color: $titulo;
-    text-align: left;
-}
-
-/* ------------------------------------------------ ABOUT - START*/
-.about{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "desarrollo mockup";
-    height: 100%;
-}
-
-.about__titles{
-    font-family: $Signika;
-    font-size: 25px;
-    color: $titulo;
-    text-align: center;
-}
-.about__desarrollo{
-    display: grid;
-    grid-area: desarrollo;
-    color: $parrafo;
-    font-size: 21px;
-    font-family: $Nunito;
-    text-align: center;
-    padding: 20px;
-}
-
-.about__mockup{
-    display: grid;
-    grid-area: mockup;
-    justify-items: center;
-    img{
-        height: 80%;
-    }
-}
-
-/* ------------------------------------------------ CLIENTS - START*/
-.card_testimonios{
-    text-align: center;
-    padding: 10px;
-    
-}
-
-.testimonios_parrafos{
-    color: $parrafo;
-    font-size: 21px;
-    font-family: $Nunito;
-}
-
-.testimonios_rate{
-    color: $estrella;
-    font-size: 25px;
-}
-
-/* ------------------------------------------------ PRICING - START*/
-.main_title{
-    margin-top: 20px;
-    font-family: $Signika;
-    font-weight: bold;
-    font-size: 35px;
-    color: $titulo;
-    text-align: center;
-}
-
-.Table{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-@mixin Table__caracteristicas{
-    color: $caracteristicas;
-    font-size: 17px;
-    font-family: $Nunito;
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background-color:#d9edc2;
-	border:1px solid #93e641;
-    p span{
-        font-weight: bolder;
-    }
-}
-
-.Table__caracteristicas_large{
-    @include Table__caracteristicas; 
-    margin: 40px 0 25px;
-	padding: 0px 20px 90px 20px;
-}
-
-.Table__caracteristicas_responsive{
-    @include Table__caracteristicas; 
-	padding: 20px;
-}
-
-.Table__caracteristicas__plan{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 50px 0;
-    h2, h6 {
-        color: $planes;
-        font-size: 35px;
-        font-family: $Signika;
-        font-weight: bold;
-    }
-}
-.Table__title{
-    @include Table__caracteristicas;
-    h6 {
-        color: $planes;
-        font-size: 35px;
-        font-family: $Nunito;
-        font-weight: bold;
-    }
-}
-/* ------------------------------------------------ FOOTER - START*/
+/* --------- FOOTER --------- */
 
 .footer{
     background-color: $footer;
@@ -227,7 +76,151 @@ $Signika: 'Signika Negative', sans-serif;
     }
 }
 
-/* ------------------------------------------------ CONTACT- START*/
+/* --------- PAGE 404 --------- */
+
+.div_page404{
+    margin: 5rem 0 5rem 0;
+    h1{
+        font-size: 130px;
+    }
+}
+
+/* --------- INDEX --------- */
+
+.imagen_index{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.parrafos{
+    color: $parrafo;
+    font-size: 21px;
+    font-family: $Nunito;
+    text-align: center;
+}
+
+/* --------- ABOUT --------- */
+
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "desarrollo mockup";
+    height: 100%;
+}
+
+.about__titles{
+    font-family: $Signika;
+    font-size: 25px;
+    color: $titulo;
+    text-align: center;
+}
+
+.about__desarrollo{
+    display: grid;
+    grid-area: desarrollo;
+    color: $parrafo;
+    font-size: 21px;
+    font-family: $Nunito;
+    text-align: center;
+    padding: 20px;
+}
+
+.about__mockup{
+    display: grid;
+    grid-area: mockup;
+    justify-items: center;
+    img{
+        height: 80%;
+    }
+}
+
+/* --------- CLIENTS --------- */
+
+.card_testimonios{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.testimonios_parrafos{
+    color: $parrafo;
+    font-size: 21px;
+    font-family: $Nunito;
+}
+
+.testimonios_rate{
+    color: $estrella;
+    font-size: 25px;
+}
+
+/* --------- PRICING --------- */
+
+.main_title{
+    margin-top: 20px;
+    font-family: $Signika;
+    font-weight: bold;
+    font-size: 35px;
+    color: $titulo;
+}
+
+.table{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+@mixin table__caracteristicas{
+    color: $caracteristicas;
+    font-size: 17px;
+    font-family: $Nunito;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#d9edc2;
+	border:1px solid #93e641;
+    p span{
+        font-weight: bolder;
+    }
+}
+
+.table__caracteristicas_large{
+    @include table__caracteristicas; 
+    margin: 40px 0 25px;
+	padding: 0px 20px 90px 20px;
+}
+
+.table__caracteristicas_responsive{
+    @include table__caracteristicas; 
+	padding: 20px;
+}
+
+.table__caracteristicas__plan{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 50px 0;
+    h2, h6 {
+        color: $planes;
+        font-size: 35px;
+        font-family: $Signika;
+        font-weight: bold;
+    }
+}
+
+.table__title{
+    @include table__caracteristicas;
+    h6 {
+        color: $planes;
+        font-size: 35px;
+        font-family: $Nunito;
+        font-weight: bold;
+    }
+}
+
+/* --------- CONTACT --------- */
+
 .contacto{
     height: 100%;
 }
@@ -245,11 +238,14 @@ $Signika: 'Signika Negative', sans-serif;
     font-size: 17px;
     margin: 35px;
 }
+
 .contacto__formulario__campos{
     padding: 25px;
     border-radius: 10px;
 	border:1px solid #080808;
 }
+
+/* --------- MEDIA QUERIES --------- */
 
 @media (max-width: 992px){
     .contacto__info{
@@ -266,6 +262,7 @@ $Signika: 'Signika Negative', sans-serif;
         padding: 20px;
     }
 }
+
 @media (max-width: 1240px){
     .about__mockup{
         img{
