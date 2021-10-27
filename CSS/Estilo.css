@@ -2,70 +2,74 @@
   margin: 0;
   padding: 0; }
 
-/* ------------------------------------------------ HEADER - START*/
+/* --------- HEADER --------- */
 .header {
   background-color: #cae7f2; }
 
-.header__div {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100%;
-  grid-template-areas: ". logo menu";
-  height: 100%; }
-
-.header__div__logo {
-  grid-area: logo;
-  justify-self: center;
-  align-self: end; }
-
 .header__div__menu {
   list-style-type: square;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-align: end;
-  word-spacing: 7px; }
-  .header__div__menu li {
-    display: inline-block; }
-    .header__div__menu li a {
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+  .header__div__menu ul li {
+    display: inline-block;
+    margin: 0.4rem; }
+    .header__div__menu ul li a {
       text-decoration: none;
       /* Link sin subrayado */
-      color: #F3F9FB;
-      font-size: 24px;
-      transition: color 0.3s, font-size 0.3s; }
-    .header__div__menu li a:hover {
-      font-size: 28px;
+      color: #31768a;
+      font-size: 26px;
+      transition: color 0.3s; }
+    .header__div__menu ul li a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 20px;
+      content: "";
+      display: block;
+      height: 3px;
+      left: 50%;
+      background: #10416b;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0; }
+    .header__div__menu ul li a:hover {
       color: #10416b; }
-  .header__div__menu ul {
-    margin-bottom: -5px; }
+    .header__div__menu ul li a:hover:after {
+      width: 100%; }
 
-/* ------------------------------------------------ PAGE 404 - START*/
+/* --------- FOOTER --------- */
+.footer {
+  background-color: #113F67;
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  color: white; }
+  .footer ul li a {
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    /* Link sin subrayado */
+    transition: font-size 0.3s; }
+  .footer a:hover {
+    font-size: 28px; }
+
+/* --------- PAGE 404 --------- */
 .div_page404 {
   margin: 5rem 0 5rem 0; }
   .div_page404 h1 {
     font-size: 130px; }
 
-/* ------------------------------------------------ CONTENT - START*/
-.Parrafos {
-  color: #113F67;
-  font-size: 21px;
-  font-family: "Nunito", sans-serif;
-  text-align: center; }
-
-/* ------------------------------------------------ INDEX - START*/
-.ImagenIndex {
+/* --------- INDEX --------- */
+.imagen_index {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   width: 100%; }
 
-.Index_title {
-  margin-top: 20px;
-  font-family: "Signika Negative", sans-serif;
-  font-weight: bold;
-  font-size: 35px;
-  color: #92CBE6;
-  text-align: left; }
+.parrafos {
+  color: #113F67;
+  font-size: 21px;
+  font-family: "Nunito", sans-serif;
+  text-align: center; }
 
-/* ------------------------------------------------ ABOUT - START*/
+/* --------- ABOUT --------- */
 .about {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -95,7 +99,7 @@
   .about__mockup img {
     height: 80%; }
 
-/* ------------------------------------------------ CLIENTS - START*/
+/* --------- CLIENTS --------- */
 .card_testimonios {
   text-align: center;
   padding: 10px; }
@@ -109,21 +113,20 @@
   color: #ffbf00;
   font-size: 25px; }
 
-/* ------------------------------------------------ PRICING - START*/
+/* --------- PRICING --------- */
 .main_title {
   margin-top: 20px;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   font-size: 35px;
-  color: #92CBE6;
-  text-align: center; }
+  color: #92CBE6; }
 
-.Table {
+.table {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px; }
 
-.Table__caracteristicas_large {
+.table__caracteristicas_large {
   color: #111010;
   font-size: 17px;
   font-family: "Nunito", sans-serif;
@@ -134,10 +137,10 @@
   border: 1px solid #93e641;
   margin: 40px 0 25px;
   padding: 0px 20px 90px 20px; }
-  .Table__caracteristicas_large p span {
+  .table__caracteristicas_large p span {
     font-weight: bolder; }
 
-.Table__caracteristicas_responsive {
+.table__caracteristicas_responsive {
   color: #111010;
   font-size: 17px;
   font-family: "Nunito", sans-serif;
@@ -147,20 +150,20 @@
   background-color: #d9edc2;
   border: 1px solid #93e641;
   padding: 20px; }
-  .Table__caracteristicas_responsive p span {
+  .table__caracteristicas_responsive p span {
     font-weight: bolder; }
 
-.Table__caracteristicas__plan {
+.table__caracteristicas__plan {
   display: flex;
   justify-content: center;
   padding: 10px 0 50px 0; }
-  .Table__caracteristicas__plan h2, .Table__caracteristicas__plan h6 {
+  .table__caracteristicas__plan h2, .table__caracteristicas__plan h6 {
     color: #161c1d;
     font-size: 35px;
     font-family: "Signika Negative", sans-serif;
     font-weight: bold; }
 
-.Table__title {
+.table__title {
   color: #111010;
   font-size: 17px;
   font-family: "Nunito", sans-serif;
@@ -169,32 +172,15 @@
   border-radius: 10px;
   background-color: #d9edc2;
   border: 1px solid #93e641; }
-  .Table__title p span {
+  .table__title p span {
     font-weight: bolder; }
-  .Table__title h6 {
+  .table__title h6 {
     color: #161c1d;
     font-size: 35px;
     font-family: "Nunito", sans-serif;
     font-weight: bold; }
 
-/* ------------------------------------------------ FOOTER - START*/
-.footer {
-  background-color: #113F67;
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
-  color: white; }
-  .footer ul li a {
-    color: white;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    /* Link sin subrayado */
-    transition: font-size 0.3s; }
-  .footer a:hover {
-    font-size: 28px; }
-
-/* ------------------------------------------------ CONTACT- START*/
+/* --------- CONTACT --------- */
 .contacto {
   height: 100%; }
 
@@ -215,6 +201,7 @@
   border-radius: 10px;
   border: 1px solid #080808; }
 
+/* --------- MEDIA QUERIES --------- */
 @media (max-width: 992px) {
   .contacto__info {
     text-align: center;
